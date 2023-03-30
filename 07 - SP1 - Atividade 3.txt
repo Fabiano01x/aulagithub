@@ -1,0 +1,33 @@
+INSERÇÃO DE DADOS:
+
+INSERT INTO `coma_bem`.`unidade` (`UNI_MEDIDA`) VALUES ('KILO');
+INSERT INTO `coma_bem`.`unidade` (`UNI_MEDIDA`) VALUES ('LITRO');
+INSERT INTO `coma_bem`.`unidade` (`UNI_MEDIDA`) VALUES ('UNIDADE');
+
+
+INSERT INTO `coma_bem`.`produtos` (`PROD_NOME`, `PROD_VALOR`, `PROD_QUANTIDADE`, `UNIDADE_UNI_COD`) VALUES ('Carne', '30.00', '2', '1');
+INSERT INTO `coma_bem`.`produtos` (`PROD_NOME`, `PROD_VALOR`, `PROD_QUANTIDADE`, `UNIDADE_UNI_COD`) VALUES ('Óleo', '30.00', '1', '3');
+INSERT INTO `coma_bem`.`produtos` (`PROD_NOME`, `PROD_VALOR`, `PROD_QUANTIDADE`, `UNIDADE_UNI_COD`) VALUES ('Leite', '30.00', '1.5', '2');
+INSERT INTO `coma_bem`.`produtos` (`PROD_NOME`, `PROD_VALOR`, `PROD_QUANTIDADE`, `UNIDADE_UNI_COD`) VALUES ('Alface', '30.00', '1', '3');
+
+
+
+ALTERAÇÃO DE DADOS:
+
+UPDATE `coma_bem`.`produtos` SET `PROD_NOME` = 'Frango' WHERE (`PRO_COD` = '1');
+UPDATE `coma_bem`.`produtos` SET `PROD_VALOR` = '25' WHERE (`PRO_COD` = '2');
+UPDATE `coma_bem`.`produtos` SET `PROD_NOME` = 'Batata' WHERE (`PRO_COD` = '4');
+UPDATE `coma_bem`.`produtos` SET `PROD_VALOR` = '20' WHERE (`PRO_COD` = '3');
+
+
+
+CONSULTA DE DADOS:
+
+SELECT * FROM coma_bem.unidade;
+SELECT * FROM coma_bem.produtos;
+
+
+
+EXCLUSÃO DE DADOS:
+
+DELETE FROM `coma_bem`.`produtos` WHERE (`PRO_COD` = '4');
